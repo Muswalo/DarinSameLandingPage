@@ -1,104 +1,15 @@
-/* General styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
-    font-family: 'HeroTextLight';
-    src: url('/assets/fonts/Montserrat-ExtraLight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 300 800;
+  font-display: swap;
 }
 
-@font-face {
-    font-family: 'HeroTextBold';
-    src: url('/assets/fonts/Montserrat-ExtraBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Hero section with background image */
-.hero {
-    background-image: url('../assets/images/hero-background-imageh.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-content {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.82);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-
-/* Media query to limit content width for top-level containers */
-@media (min-width: 1200px) {
-    header, main, footer {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 20px;
-}
-
-.logo-container {
-    height: 50px;
-}
-
-#logo {
-    height: 100%;
-}
-
-.hero-text-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    font-size: 90px;
-    margin-top: -20px;
-}
-
-#hero-text-light {
-    font-family: 'HeroTextLight', Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 50px;
-    color: white;
-    margin-right: 10px;
-}
-
-#hero-text-bold {
-    font-family: 'HeroTextBold', Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 50px;
-    color: white;
-}
-
-main {
-    width: 100%;
-}
-/* Services section */
-
-.services {
-    width: 100%;
-    padding: 50px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.active-filter {
+  background-color: #142138 !important;
+  transition: all 1s;
 }
